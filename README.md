@@ -277,6 +277,12 @@ This has basic information regarding creating and setting up the project for rep
 ## Contributors
 <table>
   <tr>
+    <td>
+        <a href="https://github.com/achakraborty2024.png">
+          <img src="https://github.com/achakraborty2024.png" width="100" height="100" alt="Arup Chakraborty"/><br />
+          <sub><b>Arup Chakraborty</b></sub>
+        </a>
+      </td>
      <td>
       <a href="https://github.com/omarsagoo.png">
         <img src="https://github.com/omarsagoo.png" width="100" height="100" alt="Omar Sagoo"/><br />
