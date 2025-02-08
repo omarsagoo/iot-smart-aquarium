@@ -1,9 +1,25 @@
 # IoT Smart Aquarium Models
 
+Our IoT application is a Smart Aquaculture Water Quality Monitoring and Control 
+System. This system will: 
+ 
+- Monitor water temperature, pH, and turbidity in real-time. 
+- Provide automated alerts when parameters deviate from optimal ranges for aquatic life. 
+- Predict future water quality trends using machine learning which can enable proactive maintenance. 
+- Integrate with actuators to control heaters, aerators, and filtration systems for temperature, oxygen, and clarity management. However, this integration may need to incorporate simulated data from those sensors for use in this project. 
+- The primary users are aquaculture operators, researchers, and environmental agencies seeking to optimize water quality, ensure sustainability, and prevent adverse conditions in aquaculture systems.
+
+This IoT application fits into the Industrial IoT sector, specifically within the aquaculture industry. It focuses on enhancing water quality monitoring and management for improved productivity and sustainability in aquaculture operations.
+
 ## Dataset
+The dataset used for this project is from the study, ["Real-time evaluation of water quality 
+for aquaculture applications"](https://www.sciencedirect.com/science/article/pii/S2352340920313391#bib0001).
+
 You can find the dataset stored in this repo, however it comes from the [Mendeley Data Repository](https://data.mendeley.com/datasets/34rczh25kc/4)
 
-There are about 10k instances in this dataset with 4 features in the 30cm dataset and 3 features in the 60cm dataset. We renamed the features for redability.
+Each dataset (30 cm and 60 cm depths) contains 9,623 observations, resulting in a total of 19,246 observations across the two datasets. 
+
+The data was collected using an IoT-based water quality monitoring system for aquaculture. Sensors were deployed at two depths (30 cm and 60 cm) in a controlled aquaculture environment to measure key parameters at regular intervals. The system recorded real-time data relevant to water quality assessment and aquaculture management.
 
 ### Features
 
@@ -11,20 +27,20 @@ This table lists the old feature names and their corresponding new names used in
 
 #### 30cm data set
 
-| Old Feature Name | New Feature Name      | Description                                                                 |
+| Old Feature Name | New Feature Name      | Description                                                                               |
 |-------------------|-----------------------|-----------------------------------------------------------------------------|
-| Date and Time              | Datetime        |  The timestamp of the sensor reading.                                           |
-| Temperature (°C)                | Temperature                | The Temperature sensor data in Celcius                                              |
-| pH               | pH       | The pH reading for the water at the respective timestamp. |
-| Turbidity (NTU)               | Turbidity        | The Turbidity sensor data.                       |
+| Date and Time              | Datetime           |  The timestamp of the sensor reading.                                         |
+| Temperature (°C)         | Temperature     | Water temperature at 30 cm depth. Measured in Celcius             |
+| pH                                | pH                     | Acidity or alkalinity of the water.                                      |
+| Turbidity (NTU)           | Turbidity          | Water clarity, measured in nephelometric turbidity units.            |
 
 #### 60cm data set
 
-| Old Feature Name | New Feature Name      | Description                                                                 |
+| Old Feature Name | New Feature Name      | Description                                                                               |
 |-------------------|-----------------------|-----------------------------------------------------------------------------|
-| Date and Time              | Datetime        |  The timestamp of the sensor reading.                                           |
-| Temperature (°C)                | Temperature                | The Temperature sensor data in Celcius                                              |
-| Turbidity (NTU)               | Turbidity        | The Turbidity sensor data.                       |
+| Date and Time                  | Datetime        |  The timestamp of the sensor reading.                                        |
+| Temperature (°C)             | Temperature   | Water temperature at 60 cm depth. Measured in Celcius           |
+| Turbidity (NTU)               | Turbidity        | Water clarity, measured in nephelometric turbidity units.          |
 
 ## Cloning this repository:
 
@@ -255,6 +271,8 @@ iot-smart-aquarium/
       └── 60cm.xlsx
     ├── notebooks/
       └──  iot-smart-aquarium.ipynb
+    ├── proposal/
+      └── Team 7 Proposal AAI-530.pdf
     ├── .gitignore
     ├── README.md
     ├── LICENSE
@@ -262,8 +280,14 @@ iot-smart-aquarium/
     └── environment.yml
 ```
 
+### data
+This directory holds the 30cm and 60cm datasets. 
+
 ### notebooks
 This directory holds all of the relevant information for the notebooks. 
+
+### proposal
+This directory holds our project proposal saved as a PDF. It explains our contributions and intial information regarding our reasoning behind this project.
 
 ### environment.yml
 This is our conda file that stores all of our dependencies, including python version and package versions.
