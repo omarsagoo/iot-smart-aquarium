@@ -11,6 +11,9 @@ System. This system will:
 
 This IoT application fits into the Industrial IoT sector, specifically within the aquaculture industry. It focuses on enhancing water quality monitoring and management for improved productivity and sustainability in aquaculture operations.
 
+## Dashboard
+We currently have [a live dashboard on Tableau Public](https://public.tableau.com/app/profile/omar.sagoo/viz/SmartAquariumTurbidityReadings/Dashboard1#1). The dashboard displays our findings with Turbidity and Temperature, It also shows our models predicted values.
+
 ## Dataset
 The dataset used for this project is from the study, ["Real-time evaluation of water quality 
 for aquaculture applications"](https://www.sciencedirect.com/science/article/pii/S2352340920313391#bib0001).
